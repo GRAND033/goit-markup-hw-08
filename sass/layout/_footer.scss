@@ -1,0 +1,68 @@
+.footer {
+    padding: 60px 0px;
+    background: var(--footer-backgr)
+}
+
+.footer__logo {
+    @include font (26px, 700, 1.19);
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    
+    color: var(--logo)
+}
+
+.footer__logo-studia {
+    @include font (26px, null, 1.19);
+    color: var(--footer-logo-studia)
+}
+
+.footer__address {
+    font-family: 'Roboto';
+    font-style: normal;
+    
+    color: var(--address)
+}
+
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer__link-address {
+    text-decoration: none;
+    color: var(--address);
+    transition: link-address 250ms var(--transition-cubic)
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__item {
+    @include font (14px, null, 1.71);
+    
+    color: var(--address)
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--footer-link);
+    transition: footer-link 250ms var(--transition-cubic)
+}
+
+.footer__link:hover,
+.footer__link:focus,
+.footer__link-address:hover,
+.footer__link-address:focus {
+    color: #2196F3;
+}
+
+.footer__block-addres {
+    margin-right: 70px;
+}

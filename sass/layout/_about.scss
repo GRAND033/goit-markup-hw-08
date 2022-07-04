@@ -1,0 +1,44 @@
+.abaut__list {
+
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.abaut__icons:not(:last-child) {
+    margin-right: 30px;
+}
+
+.abaut__icons {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.about__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.about__title-next {
+    @include font (14px, 700, 1.14);
+    display: inline-block;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+    color: var(--primary-text-color)
+}
+
+.about__text {
+    @include font (14px, null, 1.71);
+    display: inline-block;
+
+    margin: bottom 10px;
+    color: var(--secondary-text-color)
+}

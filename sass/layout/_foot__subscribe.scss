@@ -1,0 +1,79 @@
+.foot__subscribe {
+    display: block;
+    margin-left: auto;
+}
+
+.foot__subscribe-title {
+    @include font (14px, 700, 1.14);
+    display: inline-block;
+    margin-bottom: 20px;
+   
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.foot__subscribe-input-mail {
+    @include font (16px, null, 1.25);
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    transition: border-color 250ms var(--transition-cubic);
+    
+    &:focus {
+        border-color: #2196F3;
+    }
+}
+
+.foot__subscribe-input-mail::placeholder {
+    @include font (16px, null, 1.25);
+   
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+
+
+.foot__subscribe-form {
+    display: flex;
+}
+
+.foot__subscribe-button {
+    @include font (16px, 700, 1.88);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+
+    color: #FFFFFF;
+    transition: background-color 250ms var(--transition-cubic);
+    &:hover {
+        background-color: #2196F3
+    }
+}
+
+.foot__subscribe-button-icon {
+    margin-left: 10px;
+    fill: #FFFFFF;
+}

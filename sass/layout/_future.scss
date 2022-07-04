@@ -1,0 +1,49 @@
+.future {
+    padding-top: 0;
+}
+
+.future__title {
+    @include font (36px, 700, 1.17);
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    color: var(--primary-text-color)
+}
+
+.future__list {
+    margin-left: -30px;
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.future__thumb {
+    position: relative;
+
+}
+
+.future__text {
+    @include font (14px, 700, 1.14);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    text-align: center;
+
+
+    /* color: tomato */
+}
+
+.future__item {
+    margin-left: 30px;
+}

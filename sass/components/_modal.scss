@@ -1,0 +1,234 @@
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(1.2) translate(-50%, -50%);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+
+    opacity: 1;
+    transition: opacity 250ms var(--transition-cubic);
+
+}
+
+.modal {
+    position: absolute;
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #FFFFFF;
+    transition: transform 250ms var(--transition-cubic);
+}
+
+.modal__title {
+    @include font (20px, 700, 1.15);
+    display: inline-block;
+    margin-bottom: 12px;
+   
+    text-align: center;
+    color: #212121;
+}
+
+.modal__back-contact {
+    display: block;
+    top: 0;
+}
+
+.modal__contact-thumb {
+    margin-bottom: 10px;
+}
+
+.modal__contact-title {
+    @include font (12px, null, 1.17);
+    position: relative;
+    display: block;
+  
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    color: #757575;
+}
+
+.modal__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 40px;
+    outline: none;
+    transition: border 250ms var(--transition-cubic);
+}
+
+.modal__input:focus {
+    border: 1px solid #2196F3;
+    &:focus+.modal__icon {
+        fill: #2196F3;
+    }
+}
+
+
+
+
+
+.modal__input::placeholder {
+    @include font (12px, null, 1.17);
+   
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__input-wrap {
+    position: relative;
+}
+
+.modal__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--transition-cubic);
+}
+
+
+.modal__text {
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    transition: border 250ms var(--transition-cubic);
+    &:focus {
+        border: 1px solid #2196F3;
+        }
+}
+
+
+.covenant__link {
+    color: #2196F3;
+    margin-left: 4px;
+}
+
+.covenant__title {
+    display: flex;
+    justify-content: center;
+}
+
+.covenant__title span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    transition: background-color 250ms var(--transition-cubic);
+}
+
+
+.covenant__check-icon {
+    fill: transparent;
+}
+
+
+.covenant__checkbox:checked+.covenant__title span {
+    background-color: #2196F3;
+    border: none;
+}
+
+.covenant__checkbox:checked+.covenant__title .covenant__check-icon {
+    fill: #FFFFFF;
+}
+
+/* .covenant-title::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.checkbox:checked + .covenant-title::before {
+    background-color: #2196F3;
+    background-image: url(../images/Vector\ \(1\).svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox:focus + .covenant-title::before {
+    border-color: #2196F3;
+} */
+
+.covenant__title {
+    @include font (14px, null, 1.71);
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+
+    color: #757575;
+}
+
+.button__submit {
+    @include font (16px, 700, 1.87);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+
+    color: #FFFFFF;
+    background-color: #2196F3;
+    transition: background-color 250ms var(--transition-cubic);
+}
+
+.modal__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.modal__icon-close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transition: fill 250ms var(--transition-cubic);
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+        }
+}
+
