@@ -1,3 +1,15 @@
+.clients {
+@media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+@media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
 .clients__title {
     @include font (36px, 700, 1.16);
     
@@ -10,16 +22,25 @@
 
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.clients__list-item:not(:last-child) {
-    margin-right: 30px;
-}
+// .clients__list-item:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 .clients__list-item {
     /* margin-right: 30px; */
     width: 170px;
     height: 92px;
+
+@media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+@media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
