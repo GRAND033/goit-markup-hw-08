@@ -1,13 +1,37 @@
-.abaut__list {
+.about {
+    @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+ }
 
+ @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+}
+
+.abaut__list {
+    
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     list-style: none;
 }
 
-.abaut__icons:not(:last-child) {
-    margin-right: 30px;
+.about__item {
+    width: 100%;
+@media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+ }
+@media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
 }
+}
+
+// .abaut__icons:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 .abaut__icons {
     margin-bottom: 30px;
@@ -28,7 +52,9 @@
 
 .about__title-next {
     @include font (14px, 700, 1.14);
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    
     margin-bottom: 10px;
 
     text-transform: uppercase;

@@ -51,6 +51,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .section {
@@ -59,11 +60,26 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 3px solid red; */
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -460,14 +476,39 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .abaut__list {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   list-style: none;
 }
 
-.abaut__icons:not(:last-child) {
-  margin-right: 30px;
+.about__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .abaut__icons {
@@ -490,7 +531,8 @@ img {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -505,7 +547,13 @@ img {
 }
 
 .future {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .future {
+    display: block;
+  }
 }
 
 .future__title {
@@ -518,8 +566,9 @@ img {
 }
 
 .future__list {
-  margin-left: -30px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -548,7 +597,12 @@ img {
 }
 
 .future__item {
-  margin-left: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .future__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .comand {
