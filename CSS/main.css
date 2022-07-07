@@ -444,15 +444,38 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero\ back\ 2x\ \(N\).jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero-mob\ \(New\).jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero-mob\ 2x\ \(N\).jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero-tab\ \(New\).jpg);
   }
 }
-
-.hero__title {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero-tab\ 2x\ \(N\).jpg);
+  }
+}
+.hero .hero__title {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -465,8 +488,8 @@ img {
   text-transform: uppercase;
   color: var(--hero-title);
 }
-@media screen and (min-width: 768px) {
-  .hero__title {
+@media screen and (min-width: 480px) {
+  .hero .hero__title {
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
@@ -476,8 +499,18 @@ img {
     margin: 0 auto 30px;
   }
 }
-
-.hero__button {
+@media screen and (min-width: 768px) {
+  .hero .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 360px;
+    margin: 0 auto 30px;
+  }
+}
+.hero .hero__button {
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
