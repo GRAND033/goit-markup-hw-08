@@ -17,7 +17,8 @@
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(/images/Hero\ back\ 2x\ \(N\).jpg); 
+                    url(../images/Hero\ back\ 2x\ \(N\).jpg);
+         
 }
 
     @media screen and(min-width: 480px) {
@@ -26,14 +27,14 @@
             justify-content: space-between;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(/images/Hero-mob\ \(New\).jpg);
+        url(../images/Hero-mob\ \(New\).jpg);
     
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(/images/Hero-mob\ 2x\ \(N\).jpg);
+                url(../images/Hero-mob\ 2x\ \(N\).jpg);
     }
     }
    
@@ -43,14 +44,14 @@
         justify-content: space-between;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(/images/Hero-tab\ \(New\).jpg );
+                url(../images/Hero-tab\ \(New\).jpg );
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(/images/Hero-tab\ 2x\ \(N\).jpg);
+                url(../images/Hero-tab\ 2x\ \(N\).jpg);
     }
 }
 
